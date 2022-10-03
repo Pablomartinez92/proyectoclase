@@ -1,0 +1,123 @@
+// reset, variables, mixin, extend
+@import "partials/reset";
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+// estilos home
+body {
+    background-color: $color-principal;
+}
+
+// estilos header
+
+header{
+    @extend %flex;
+}
+
+header h1 {
+    text-align: center;
+    color: $color-secundario;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.genero {
+    background-color: $bgcolor;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion {
+    0% {
+        background-color: $bgcolor-anim1;
+    }
+
+    25% {
+        background-color: $bgcolor-anim2;
+    }
+
+    50% {
+        background-color: $bgcolor-anim3;
+    }
+
+    75% {
+        background-color: $bgcolor-anim4;
+    }
+
+    100% {
+        background-color: $bgcolor-anim5;
+    }
+}
+
+.boton {
+    box-shadow: 2px 2px 2px $color-principal;
+    color: $color-secundario;
+    font-weight: bold;
+    border-radius: 4.5px;
+}
+
+header nav ul li {
+    text-align: center;
+    list-style: none;
+
+    color: $color-secundario;
+}
+
+header nav ul li a {
+    color: $color-secundario;
+    text-decoration: none;
+}
+
+// estilos seccion main
+
+main{
+    @include flexible(flex, center, row, wrap)
+}
+
+main img {
+    width: $medida-principal;
+    height: $medida-principal;
+}
+
+.indeximg {
+    width: 90%;
+    height: 90%;
+}
+
+main h4 {
+    color: $color-secundario;
+}
+
+// estilos seccion info
+
+.info {
+    background-color: rgba(38, 111, 194, 0.822);
+}
+
+div h2 {
+    color: $color-secundario;
+}
+
+div nav ul li {
+    list-style: none;
+}
+
+div nav ul li a {
+    color: $color-secundario;
+    text-decoration: none;
+}
+
+// estilos footer
+
+footer {
+    @extend %flex;
+    color: $color-secundario;
+}

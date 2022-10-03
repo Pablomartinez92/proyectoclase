@@ -1,0 +1,77 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos de la home */
+body{
+    background-color: black
+}
+
+/* estilos de header home */
+
+header h1{
+text-align: center;
+color: white;
+text-transform: uppercase;
+}
+
+header nav ul{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header nav ul li{
+    text-align: center;
+    list-style: none;
+    background-color: rgb(252, 6, 59);
+    color: white;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* estilos seccion main */
+
+main img{
+    width: 250px;
+    height: 250px;
+}
+main h4{
+    color: white;
+    font-size: 30px;
+}
+main p{
+    color: white;
+}
+
+
+/* estilos seccion info*/
+
+div{
+    background-color: rgba(38, 111, 194, 0.822);
+}
+
+div h2{
+    color: white;
+}
+
+div nav ul li{
+    list-style: none;
+}
+
+div nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* estilos footer */
+footer{
+    color: white;
+}

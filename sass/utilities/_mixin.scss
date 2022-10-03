@@ -1,0 +1,6 @@
+@mixin flexible($dis, $align, $direction, $corte){
+    display: $dis;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $corte;
+}
